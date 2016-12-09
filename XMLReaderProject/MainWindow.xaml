@@ -1,0 +1,23 @@
+﻿<Window x:Class="XMLReaderProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:my="clr-namespace:XMLReaderProject"
+    
+        Title="Simple Binding example" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                
+                <Border Background="SkyBlue">
+                    <Label Content="{Binding Path=Name}" />
+                </Border>
+                <Border Background="CadetBlue">
+                    <Label Content="{Binding Path=Surname}" />
+                </Border>
+                <Border Background="LightGoldenRodYellow">
+                    <Label Content="{Binding Path=CellphoneNr}" />
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
